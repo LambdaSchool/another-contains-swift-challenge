@@ -1,7 +1,9 @@
 import Foundation
 
 extension String {
-    
+    func anotherContains(_ member: NSString) -> Bool {
+     return localizedCaseInsensitiveContains("\(member)")
+    }
 }
 
 
