@@ -20,14 +20,24 @@ import Foundation
 //        return answer
 //    }
 //}
-extension String {
-    func anotherContains(_ element: String) -> Bool {
-        if element.lowercased() == self.description.lowercased(){
-            return true
-        }else{
-            return false
-        }
+//extension String {
+//    func anotherContains(_ element: String) -> Bool {
+//        if element.lowercased() == self.description.lowercased(){
+//            return true
+//        }else{
+//            return false
+//        }
+//    }
+//}
+
+func anotherContains(_ userSubString: String) -> Bool {
+    let string = localizedStandardRange(of: userSubString)
+    if (string != nil) {
+        return true
+    } else {
+        return false
     }
+}
 }
 
 
