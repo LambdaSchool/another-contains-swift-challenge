@@ -29,7 +29,7 @@ import Foundation
 //        }
 //    }
 //}
-
+extension String {
 func anotherContains(_ userSubString: String) -> Bool {
     let string = localizedStandardRange(of: userSubString)
     if (string != nil) {
