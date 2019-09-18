@@ -1,8 +1,16 @@
 import Foundation
 
 extension String {
-    
+    func anotherContains(_ userSubString: String) -> Bool {
+        let test = localizedStandardRange(of: userSubString)
+        if (test != nil) {
+            return true
+        } else {
+            return false
+        }
+    }
 }
+
 
 
 // test cases
