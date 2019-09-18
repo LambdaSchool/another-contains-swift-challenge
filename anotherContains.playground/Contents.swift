@@ -1,9 +1,18 @@
 import Foundation
 
+
 extension String {
-    
+    var WaLdO: String {return "WALDO"}
 }
 
+
+func contains(where predicate: (WaLdO) throws -> Bool) rethrows -> Bool {
+    if string.contains("WALDO") {
+    print("Where is WaLdO".anotherContains("WALDO")) else {
+        return
+        }
+    }
+}
 
 // test cases
 print("Where is WaLdO".anotherContains("WALDO")) // true
