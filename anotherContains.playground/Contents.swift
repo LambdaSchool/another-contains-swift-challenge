@@ -10,9 +10,11 @@ extension String {
         for x in self.lowercased() {
             for y in string.lowercased() {
                 if x == y {
-                    count += 1
-                    if count == string.count {
-                        result = true
+                    if count < string.count {
+                        count += 1
+                        if count == string.count {
+                            result = true
+                        }
                     }
                 }
             }
