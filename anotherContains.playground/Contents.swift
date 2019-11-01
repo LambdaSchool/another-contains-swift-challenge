@@ -1,7 +1,9 @@
 import Foundation
 
 extension String {
-    
+    func anotherContains(_ string: String) -> Bool {
+        return self.lowercased().range(of: string.lowercased())?.isEmpty == false
+    }
 }
 
 
