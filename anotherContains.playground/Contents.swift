@@ -7,9 +7,9 @@ extension String {
         var result = false
         var count = 0
         
-        for letter in self.lowercased() {
-            for character in string.lowercased() {
-                if letter == character {
+        for x in self.lowercased() {
+            for y in string.lowercased() {
+                if x == y {
                     count += 1
                     if count == string.count {
                         result = true
@@ -17,7 +17,6 @@ extension String {
                 }
             }
         }
-        
         return result
     }
 }
@@ -28,3 +27,4 @@ print("Where is WaLdO".anotherContains("WALDO")) // true
 print("Where is WaLdO".anotherContains("where")) // true
 print("Where is WaLdO".anotherContains("is wA")) // true
 print("Where is WaLdO".anotherContains("nOPe"))  // false
+print("Where is WaLdO".anotherContains("erREis"))
