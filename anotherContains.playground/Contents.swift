@@ -12,3 +12,4 @@ print("Where is WaLdO".anotherContains(string: "WALDO")) // true
 print("Where is WaLdO".anotherContains(string: "where")) // true
 print("Where is WaLdO".anotherContains(string: "is wA")) // true
 print("Where is WaLdO".anotherContains(string: "nOPe"))  // false
+
