@@ -1,7 +1,10 @@
 import Foundation
 
 extension String {
-    
+    func anotherContains(_ str: String) -> Bool {
+        guard let _ = self.range(of: str, options: .caseInsensitive) else { return false }
+        return true
+    }
 }
 
 
