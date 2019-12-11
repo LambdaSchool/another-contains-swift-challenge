@@ -2,6 +2,12 @@ import Foundation
 
 extension String {
     
+    func anotherContains(_ string: String)-> Bool {
+        return self.uppercased().range(of: string.uppercased()) != nil
+       
+    }
+    
+    
 }
 
 
