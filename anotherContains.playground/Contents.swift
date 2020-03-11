@@ -1,7 +1,17 @@
 import Foundation
 
 extension String {
-    
+    func anotherContains(_ searchString: String) -> Bool {
+        let searchString = searchString.lowercased()
+        let string = self.lowercased()
+        let test = string.range(of: searchString)
+        if test == nil {
+            return false
+        } else {
+            return true
+        }
+        
+    }
 }
 
 
