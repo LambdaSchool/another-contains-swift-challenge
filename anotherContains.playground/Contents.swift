@@ -1,6 +1,10 @@
 import Foundation
 
 extension String {
+    func anotherContains(_ n: String) -> Bool {
+        let stringRange = range(of: n, options: .caseInsensitive, range: .none, locale: .none)
+        return stringRange != nil
+    }
     
 }
 
