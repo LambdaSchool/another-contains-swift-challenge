@@ -9,7 +9,7 @@ extension String {
     // Range func
     func range(of searchStringArray: [String]){
         
-        let myRange = 0...2
+        let myRange = 0...3
         
         let array = searchStringArray
         array[myRange]
@@ -20,10 +20,10 @@ extension String {
     }
 }
 // anotherContains test case
-print("JoSEph Edward VevERKa".anotherContains("JOSEPH"))
+print("JoSEph Edward VevERKa".anotherContains("JOSEPH")) // true
 
 // range test case
-print("".range(of: ["Hello", "My", "Name", "is", "Joe", "Veve", "rka"]))
+print("".range(of: ["Hello", "My", "Name", "is", "Joe", "Veve", "rka"])) // prints only "Hello", "My", "Name", "is" (determined by my closed range provided in the function above)
 
 
 
