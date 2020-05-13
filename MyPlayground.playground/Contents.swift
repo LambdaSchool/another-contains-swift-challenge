@@ -7,9 +7,9 @@ extension String {
         return self.lowercased().range(of: string.lowercased())?.isEmpty == false
     }
     // Range func
-    func range(of searchStringArray: [String]){
+    func range(of searchStringArray: [String], range: ClosedRange<Int>){
         
-        let myRange = 0...3
+        let myRange = range
         
         let array = searchStringArray
         array[myRange]
@@ -23,7 +23,9 @@ extension String {
 print("JoSEph Edward VevERKa".anotherContains("JOSEPH")) // true
 
 // range test case
-print("".range(of: ["Hello", "My", "Name", "is", "Joe", "Veve", "rka"])) // prints only "Hello", "My", "Name", "is" (determined by my closed range provided in the function above)
+let rangeTest = ["Hey How", "Are You", "Doing", "Today", "?"]
+print("".range(of: rangeTest, range: 0...2))
+// prints only index 0...2 of rangeTest array of strings (determined by my closed range provided in the function above)
 
 
 
