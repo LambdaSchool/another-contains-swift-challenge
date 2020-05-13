@@ -2,6 +2,17 @@ import Foundation
 
 extension String {
     
+    
+    func range(of: ) {
+        
+        for letter in phrase {
+            
+            
+        }
+        
+    }
+    
+    
 }
 
 
